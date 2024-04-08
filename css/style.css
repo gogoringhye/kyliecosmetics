@@ -528,7 +528,7 @@ footer ul li b {
 .moreBtn {
     position: relative;
     display: inline-block;
-    margin-top: 20px;
+    margin-bottom: 20px;
     color: #333;
     transform: skewX(-15deg) translateX(5px);
     transition: 0.2s;
