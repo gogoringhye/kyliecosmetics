@@ -44,7 +44,6 @@ body {
 }
 
 /* menuOpen */
-.menuOpen {}
 
 .menuOpen .open {
     position: fixed;
@@ -77,8 +76,6 @@ body {
 .menuOpen .open:hover::before {
     right: 0;
 }
-
-.menuOpen .open img {}
 
 .menuOpen .menuWrap {
     position: fixed;
@@ -132,10 +129,6 @@ body {
     width: 100%;
 }
 
-.menuOpen .menuWrap .tit li a span {}
-
-.menuOpen .menuWrap .tit li a span b {}
-
 .menuOpen .menuWrap a.close {
     position: absolute;
     top: 50%;
@@ -151,8 +144,6 @@ body {
     border-bottom: 1px solid #888;
     color: #888;
 }
-
-.menuOpen .menuWrap a img {}
 
 /* menuWrap */
 .menuOpen .menuWrap {
@@ -200,7 +191,6 @@ body {
 
 
 /* header */
-header {}
 
 .innerheader {
     max-width: 1720px;
@@ -276,8 +266,6 @@ header {}
     font-size: 72px;
 }
 
-.visual .mainText .tit span {}
-
 .visual .mainText .tit span.gray {
     color: #ccc;
 }
@@ -324,8 +312,6 @@ header {}
 .jurnal .box .tit {
     margin-bottom: 40px;
 }
-
-.jurnal .box ul {}
 
 .jurnal .box ul li {
     margin-bottom: 30px;
@@ -397,8 +383,6 @@ body.on {
     margin-bottom: 10px;
 }
 
-.customer .tit span {}
-
 .customer .txt {
     color: #777;
 }
@@ -443,11 +427,11 @@ body.on {
 }
 
 .follow p {
-    margin-bottom:2vw;
+    margin-bottom: 2vw;
     text-align: center;
     font-size: 1vw;
-    font-weight: 600;
     text-transform: uppercase;
+    font-family: 'HandelGothic TL';
 }
 
 .follow .follow_wrap {
@@ -533,23 +517,19 @@ body.on {
 /* //follow */
 
 /* footer*/
-footer {
-    width: 100%;
-    height: 50vh;
-}
 
 .foot_wrap {
     display: flex;
-    justify-content: space-between;
-    padding: 4vw 2vw 4vw 4vw;
-    color: #666;
-    font-size: 0.7vw;
-    border-top: 1px solid #e3e3e3;
+    padding: 4vw 2vw 2vw 2vw;
+    color: #333;
+    font-size: 0.8vw;
 }
 
 footer .foot_left {
     display: flex;
-    width: 50%;
+    width: 100%;
+    justify-content: space-around;
+
 }
 
 footer .foot_left ul {
@@ -561,7 +541,8 @@ footer .foot_left ul:nth-child(4) {
 }
 
 footer .foot_left ul li {
-    line-height: 1.2vw;
+    font-size: 1vw;
+    line-height: 1.5vw;
     transition: 0.3s;
 }
 
@@ -581,17 +562,6 @@ footer .foot_left ul li a {
 
 footer .foot_left ul li a:hover {
     color: var(--Orange);
-}
-
-
-footer .foot_right {
-    font-size: 10px;
-    line-height: 1.5;
-    width: 40%;
-    margin: 100px 100px;}
-
-footer .foot_right p {
-    margin-top: 1.3vw;
 }
 
 /* ----------타이틀, 텍스트---------- */
@@ -863,345 +833,378 @@ footer .foot_right p {
         box-sizing: border-box;
         padding: 0 30px;
     }
-}
-
-/* 1024px전에 깨지는 것은 1400px에 가서 추가적인 스타일을 적용하여 해결*/
-
-/* ------- 태블릿(767~1024) ----- */
-@media (max-width:1024px) {
-    .innerheader {
-        height: 80px;
-        line-height: 80px;
-    }
-
-    .innerheader .mainmenu {
-        display: none;
-    }
-
-    .menuOpen .open {
-        width: 70px;
-        height: 80px;
-        padding: 0;
-        top: 0;
-        transform: none;
-    }
-
-    .menuOpen .open::before {
-        display: none;
-    }
-
-    .visual .mainImg {
-        float: none;
-        width: 100%;
-    }
-
-    .visual .mainText {
-        float: none;
-        width: 100%;
-        padding-top: 50px;
-        padding-left: 30px;
-        box-sizing: border-box;
-    }
-
-    .inner .box {
-        width: 100%;
-        float: none;
-    }
-
-    .jurnal {
-        padding: 80px 0;
-    }
-
-    .jurnal .box img {
-        width: 100%;
-    }
-
-    .jurnal .circleBox {
-        top: 200px;
-    }
-
-    .jurnal .box .img {
-        width: 80%;
-        margin: 0 auto 50px;
-    }
-
-    .service .box.design {
-        margin-top: 50px;
-        width: 100%;
-    }
-
-    .service .box.design .img img {
-        margin: 50px 0 0;
-    }
-
-    .service .box.design .tit {
-        font-size: 35px;
-    }
-
-    .customer {
-        padding: 120px 0;
-    }
-
-    .customer .tit {
-        font-size: 30px;
-    }
-
-    .team {
-        padding: 80px 0;
-    }
-
-    .team .circleBox {
-        left: 15%;
-    }
-
-    .team .box.left {
-        padding-right: 0;
-    }
-
-    .team .box img {
-        width: 100%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .team {
-        overflow: hidden;
-    }
-
-    .team .box.left img {
-        width: 70%;
-    }
-
-    .team .box:last-child {
-        width: 90%;
-        margin: 70px auto 0;
-    }
-
-    .team .box:last-child img {
-        margin: 50px 0;
-    }
-
-    /* footer */
 
     .foot_wrap {
-        font-size: 1.2vw;
-        padding: 4vw 2vw 5vw 2vw;
-    }
-
-    footer .foot_left ul {
-        margin-right: 7%;
-    }
-
-    footer .foot_left ul:nth-child(4) {
-        margin-right: 0;
-        width: 23vw;
-    }
-
-    footer .foot_left ul li {
-        line-height: 1.8vw;
-    }
-
-    footer .foot_left ul li:nth-child(1) {
-        padding-bottom: 2vw;
-        font-size: 1.3vw;
-    }
-
-
-
-
-}
-
-
-
-/* ------- 모바일(321~766) ----- */
-/* 767px까지 가는데 문제가 생기면 1024px에 가서 추가적인 스타일을 적용하여 해결 */
-@media (max-width:767px) {
-    .innerheader {
-        height: 60px;
-        line-height: 60px;
-    }
-
-    .menuOpen .open {
-        width: 52px;
-        height: 60px;
-    }
-
-    .menuOpen .open img {
-        height: 38px;
-    }
-
-    .menuOpen .menuWrap a.close.en {
-        display: none;
-    }
-
-    .menuOpen .menuWrap a.close {
-        position: absolute;
-        top: 20px;
-        transform: none;
-        left: auto;
-        right: 20px;
-    }
-
-    .visual {
-        /* max-width: 1720px;
-    margin: 0 auto; 실무에서는 냅둬도 됨*/
-        padding: 0 20px;
-    }
-
-    .visual .mainText .tit {
-        font-size: 30px;
-    }
-
-    .jurnal {
-        padding: 50px 0;
-    }
-
-    .jurnal .circleBox {
-        top: 10%;
-        right: -6%;
-    }
-
-    .jurnal .box .img {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .jurnal .box .tit {
-        margin-bottom: 20px;
-        font-size: 37px;
-    }
-
-    .jurnal .box ul li {
-        margin-bottom: 20px;
-    }
-
-    .jurnal .box ul li {
-        flex-wrap: wrap;
-    }
-
-    .jurnal .box ul li h3 {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .jurnal .box ul li p {
-        width: 100%;
-        font-size: 12px;
-    }
-
-    .jurnal .moreBtn {
-        margin-left: 0;
-    }
-
-    .service {
-        padding: 50px 0;
-    }
-
-    .service .box .img img {
-        width: 100%;
-        margin-top: 30px;
-    }
-
-    .service .box.design {
-        padding-top: 50px;
-    }
-
-    .service .box.design .tit {
-        font-size: 25px;
-    }
-
-    .service .tit {
-        font-size: 37px;
-    }
-
-    .customer {
-        padding: 80px 20px;
-    }
-
-    .customer .tit {
-        font-size: 25px;
-    }
-
-    .team .circleBox {
-        left: 4%;
-    }
-
-    .team .box .txt {
-        margin: 30px 0 10px;
-    }
-
-    .team .box img {
-        margin-top: 50px;
-    }
-
-    .team .box:last-child img {
-        margin-top: 30px;
-    }
-
-    .team .box .tit {
-        font-size: 25px;
-    }
-
-    .team .tit .en_s {
-        font-size: 16px;
-    }
-
-    /* footer */
-
-    .foot_wrap {
-        display: block;
-        font-size: 1.8vw;
+        display: flex;
+        justify-content: space-between;
+        padding: 4vw 2vw 2vw 2vw;
     }
 
     footer .foot_left {
         width: 100%;
+        display: flex;
         justify-content: space-around;
     }
 
-    footer .foot_left ul:nth-child(4) {
-        margin-right: 0;
-        width: auto;
-    }
-
     footer .foot_left ul li {
-        line-height: 3.3vw;
+        font-size: 1.2vw;
     }
 
-    footer .foot_left ul li:nth-child(1) {
-        padding-bottom: 2.3vw;
-        font-size: 2.3vw;
+    footer .foot_left a {
+        line-height: 1.5vw;
+    }
+
+    /* 1024px전에 깨지는 것은 1400px에 가서 추가적인 스타일을 적용하여 해결*/
+
+    /* ------- 태블릿(767~1024) ----- */
+    @media (max-width:1024px) {
+        .innerheader {
+            height: 80px;
+            line-height: 80px;
+        }
+
+        .innerheader .mainmenu {
+            display: none;
+        }
+
+        .menuOpen .open {
+            width: 70px;
+            height: 80px;
+            padding: 0;
+            top: 0;
+            transform: none;
+        }
+
+        .menuOpen .open::before {
+            display: none;
+        }
+
+        .visual .mainImg {
+            float: none;
+            width: 100%;
+        }
+
+        .visual .mainText {
+            float: none;
+            width: 100%;
+            padding-top: 50px;
+            padding-left: 30px;
+            box-sizing: border-box;
+        }
+
+        .inner .box {
+            width: 100%;
+            float: none;
+        }
+
+        .jurnal {
+            padding: 80px 0;
+        }
+
+        .jurnal .box img {
+            width: 100%;
+        }
+
+        .jurnal .circleBox {
+            top: 200px;
+        }
+
+        .jurnal .box .img {
+            width: 80%;
+            margin: 0 auto 50px;
+        }
+
+        .service .box.design {
+            margin-top: 50px;
+            width: 100%;
+        }
+
+        .service .box.design .img img {
+            margin: 50px 0 0;
+        }
+
+        .service .box.design .tit {
+            font-size: 35px;
+        }
+
+        .customer {
+            padding: 120px 0;
+        }
+
+        .customer .tit {
+            font-size: 30px;
+        }
+
+        .team {
+            padding: 80px 0;
+        }
+
+        .team .circleBox {
+            left: 15%;
+        }
+
+        .team .box.left {
+            padding-right: 0;
+        }
+
+        .team .box img {
+            width: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .team {
+            overflow: hidden;
+        }
+
+        .team .box.left img {
+            width: 70%;
+        }
+
+        .team .box:last-child {
+            width: 90%;
+            margin: 70px auto 0;
+        }
+
+        .team .box:last-child img {
+            margin: 50px 0;
+        }
+
+        /* footer */
+
+        .foot_wrap {
+            font-size: 1.2vw;
+            padding: 4vw 2vw 5vw 2vw;
+        }
+
+        footer .foot_left ul {
+            margin-right: 7%;
+        }
+
+        footer .foot_left ul:nth-child(4) {
+            margin-right: 0;
+            width: 23vw;
+        }
+
+        footer .foot_left ul li {
+            line-height: 1.8vw;
+        }
+
+        footer .foot_left ul li:nth-child(1) {
+            padding-bottom: 2vw;
+            font-size: 1.3vw;
+        }
+
+        footer .foot_left {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
     }
 
 
-    footer .foot_right {
-        width: 100%;
-        text-align: center;
-        margin: 7vw 0vw;
+
+    /* ------- 모바일(321~766) ----- */
+    /* 767px까지 가는데 문제가 생기면 1024px에 가서 추가적인 스타일을 적용하여 해결 */
+    @media (max-width:767px) {
+        .innerheader {
+            height: 60px;
+            line-height: 60px;
+        }
+
+        .menuOpen .open {
+            width: 52px;
+            height: 60px;
+        }
+
+        .menuOpen .open img {
+            height: 38px;
+        }
+
+        .menuOpen .menuWrap a.close.en {
+            display: none;
+        }
+
+        .menuOpen .menuWrap a.close {
+            position: absolute;
+            top: 20px;
+            transform: none;
+            left: auto;
+            right: 20px;
+        }
+
+        .visual {
+            /* max-width: 1720px;
+    margin: 0 auto; 실무에서는 냅둬도 됨*/
+            padding: 0 20px;
+        }
+
+        .visual .mainText .tit {
+            font-size: 30px;
+        }
+
+        .jurnal {
+            padding: 50px 0;
+        }
+
+        .jurnal .circleBox {
+            top: 10%;
+            right: -6%;
+        }
+
+        .jurnal .box .img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .jurnal .box .tit {
+            margin-bottom: 20px;
+            font-size: 37px;
+        }
+
+        .jurnal .box ul li {
+            margin-bottom: 20px;
+        }
+
+        .jurnal .box ul li {
+            flex-wrap: wrap;
+        }
+
+        .jurnal .box ul li h3 {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .jurnal .box ul li p {
+            width: 100%;
+            font-size: 12px;
+        }
+
+        .jurnal .moreBtn {
+            margin-left: 0;
+        }
+
+        .service {
+            padding: 50px 0;
+        }
+
+        .service .box .img img {
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .service .box.design {
+            padding-top: 50px;
+        }
+
+        .service .box.design .tit {
+            font-size: 25px;
+        }
+
+        .service .tit {
+            font-size: 37px;
+        }
+
+        .customer {
+            padding: 80px 20px;
+        }
+
+        .customer .tit {
+            font-size: 25px;
+        }
+
+        .team .circleBox {
+            left: 4%;
+        }
+
+        .team .box .txt {
+            margin: 30px 0 10px;
+        }
+
+        .team .box img {
+            margin-top: 50px;
+        }
+
+        .team .box:last-child img {
+            margin-top: 30px;
+        }
+
+        .team .box .tit {
+            font-size: 25px;
+        }
+
+        .team .tit .en_s {
+            font-size: 16px;
+        }
+
+        .follow p {
+            font-size: 2vw;
+        }
+
+        /* footer */
+
+        .foot_wrap {
+            display: block;
+            font-size: 1.8vw;
+        }
+
+        footer .foot_left {
+            width: 100%;
+            justify-content: space-around;
+        }
+
+        footer .foot_left ul:nth-child(4) {
+            margin-right: 0;
+            width: auto;
+        }
+
+        footer .foot_left ul li {
+            line-height: 3vw;
+            font-size: 1.8vw;
+            margin-bottom: 1vw;
+        }
+
+        footer .foot_left ul li:nth-child(1) {
+            padding-bottom: 2.3vw;
+            font-size: 2.3vw;
+        }
+
     }
 
-}
+    /* ------- 모바일(0~320) ----- */
+    @media (max-width:320px) {
+        .visual .mainText {
+            padding-left: 0;
+        }
 
-/* ------- 모바일(0~320) ----- */
-@media (max-width:320px) {
-    .visual .mainText {
-        padding-left: 0;
-    }
+        .tit .en_s {
+            font-size: 16px;
+        }
 
-    .tit .en_s {
-        font-size: 16px;
-    }
+        .visual .mainText .tit {
+            font-size: 27px;
+        }
 
-    .visual .mainText .tit {
-        font-size: 27px;
-    }
+        .moreBtn {
+            font-size: 11px;
+        }
 
-    .moreBtn {
-        font-size: 11px;
+        .follow {
+            height: 20vh;
+            width: 100%;
+            padding: 5vw 0vw 2vw 0vw;
+        }
+
+        .follow p {
+            font-size: 2vw;
+        }
+
+        .follow .follow_wrap {
+            height: 35vw;
+        }
     }
-    .follow .follow_tit .sns_icon ul .icon {
-        margin-right: 1vw;
-      }
 }
 
 /* 반응형에서 화면 크기가 어떻든 아래쪽에 스크롤이 나오면 망한거임  */
