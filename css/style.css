@@ -383,7 +383,7 @@ body.on {
 
 /* customer */
 .customer {
-    background: url(https://kyliecosmetics.com/cdn/shop/files/v1_kylie_cosmic-2.0_Launch_HP_banner_desktop_1728x969_ratio.jpg?crop=center&height=480&v=1740153112&width=1440)no-repeat center;
+    background: url(https://kyliecosmetics.com/cdn/shop/files/v3_Lip-Butter_PDP_real-results_1500x1153_c701921d-5bd3-408b-b3b9-6df3aa1ac888.jpg?height=691&v=1738714990&width=900)no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     /* 배경 이미지가 뷰포트에 고정되어 스크롤에 따라 움직이지 않음 */
@@ -406,13 +406,13 @@ body.on {
 /* team */
 .team {
     position: relative;
-    padding: 190px 0;
+    padding: 150px 0;
 }
 
 .team .box {
     margin-left: 10%;
     width: 45%;
-    padding-top: 60px;
+    padding-top: 5px;
 }
 
 .team .box.left {
@@ -433,46 +433,165 @@ body.on {
     margin-bottom: 100px;
 }
 
+/* follow */
+
+.follow {
+    height: 100%;
+    width: 100%;
+    padding: 2vw 0vw 5vw 0vw;
+    background: #F5F4F5;
+}
+
+.follow p {
+    margin-bottom:2vw;
+    text-align: center;
+    font-size: 1vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.follow .follow_wrap {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+    height: 18vw;
+    overflow-y: scroll;
+}
+
+.follow .cont {
+    position: relative;
+    width: 8vw;
+    height: 8vw;
+    margin-top: 0.7vw;
+    transition: 0.2s;
+}
+
+.follow .cont:hover {
+    filter: brightness(0.8);
+}
+
+.follow .cont:hover::before,
+.follow .cont:hover::after {
+    opacity: 1;
+}
+
+.follow .cont::before {
+    content: "";
+    position: absolute;
+    left: 52%;
+    top: 50%;
+    width: 0.7vw;
+    height: 0.7vw;
+    transform: translateY(-50%);
+    background: url(../img/instaicon_heart.png) no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transition: 0.2s;
+    z-index: 10;
+}
+
+.follow .cont::after {
+    content: "";
+    position: absolute;
+    left: 36%;
+    top: 50%;
+    width: 0.7vw;
+    height: 0.7vw;
+    transform: translateY(-50%);
+    background: url(../img/instaicon_chat.png) no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transition: 0.2s;
+    z-index: 10;
+}
+
+.cont img {
+    width: 100%;
+    height: 100%;
+}
+
+.follow .follow_wrap::-webkit-scrollbar {
+    width: 6px;
+}
+
+.follow .follow_wrap::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.follow .follow_wrap::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: gray;
+}
+
+.follow .follow_wrap::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+}
+
+/* //follow */
+
 /* footer*/
 footer {
-    width: 1320px;
-    margin: 0 auto;
+    width: 100%;
+    height: 50vh;
 }
 
-footer .top {}
-
-footer .top .tit {
-    color: #fff;
-    font-size: 32px;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-footer .bottom {
-    border-top: 1px solid #e6e6e6;
-    padding: 40px 0 100px;
-}
-
-footer ul {
+.foot_wrap {
     display: flex;
+    justify-content: space-between;
+    padding: 4vw 2vw 4vw 4vw;
+    color: #666;
+    font-size: 0.7vw;
+    border-top: 1px solid #e3e3e3;
 }
 
-footer ul li {
-    width: 23%;
-    color: #888;
-    font-size: 12px;
-    line-height: 2;
-    /* 200% */
+footer .foot_left {
+    display: flex;
+    width: 50%;
 }
 
-footer ul li:first-child {
-    width: 31%;
-    font-size: 28px;
-    color: #fff;
+footer .foot_left ul {
+    margin-right: 10%;
 }
 
-footer ul li b {
-    color: #fff;
+footer .foot_left ul:nth-child(4) {
+    margin-right: 0;
+}
+
+footer .foot_left ul li {
+    line-height: 1.2vw;
+    transition: 0.3s;
+}
+
+footer .foot_left ul li:nth-child(1) {
+    padding-bottom: 1vw;
+}
+
+footer .foot_left ul li strong {
+    display: block;
+}
+
+footer .foot_left ul li a {
+    display: block;
+    color: #666;
+    transition: 0.3s;
+}
+
+footer .foot_left ul li a:hover {
+    color: var(--Orange);
+}
+
+
+footer .foot_right {
+    font-size: 10px;
+    line-height: 1.5;
+    width: 40%;
+    margin: 100px 100px;}
+
+footer .foot_right p {
+    margin-top: 1.3vw;
 }
 
 /* ----------타이틀, 텍스트---------- */
@@ -863,19 +982,37 @@ footer ul li b {
         margin: 50px 0;
     }
 
-    footer ul {
-        flex-wrap: wrap;
+    /* footer */
+
+    .foot_wrap {
+        font-size: 1.2vw;
+        padding: 4vw 2vw 5vw 2vw;
     }
 
-    footer ul li:first-child {
-        width: 100%;
-        margin-bottom: 30px;
+    footer .foot_left ul {
+        margin-right: 7%;
     }
 
-    footer ul li {
-        width: 33.3333%;
+    footer .foot_left ul:nth-child(4) {
+        margin-right: 0;
+        width: 23vw;
     }
+
+    footer .foot_left ul li {
+        line-height: 1.8vw;
+    }
+
+    footer .foot_left ul li:nth-child(1) {
+        padding-bottom: 2vw;
+        font-size: 1.3vw;
+    }
+
+
+
+
 }
+
+
 
 /* ------- 모바일(321~766) ----- */
 /* 767px까지 가는데 문제가 생기면 1024px에 가서 추가적인 스타일을 적용하여 해결 */
@@ -1010,22 +1147,39 @@ footer ul li b {
         font-size: 16px;
     }
 
-    footer {
-        padding: 0 20px;
+    /* footer */
+
+    .foot_wrap {
+        display: block;
+        font-size: 1.8vw;
     }
 
-    footer .top .tit {
-        margin-bottom: 30px;
-    }
-
-    footer ul li:first-child {
-        font-size: 20px;
-    }
-
-    footer ul li {
+    footer .foot_left {
         width: 100%;
-        margin-bottom: 12px;
+        justify-content: space-around;
     }
+
+    footer .foot_left ul:nth-child(4) {
+        margin-right: 0;
+        width: auto;
+    }
+
+    footer .foot_left ul li {
+        line-height: 3.3vw;
+    }
+
+    footer .foot_left ul li:nth-child(1) {
+        padding-bottom: 2.3vw;
+        font-size: 2.3vw;
+    }
+
+
+    footer .foot_right {
+        width: 100%;
+        text-align: center;
+        margin: 7vw 0vw;
+    }
+
 }
 
 /* ------- 모바일(0~320) ----- */
@@ -1045,6 +1199,9 @@ footer ul li b {
     .moreBtn {
         font-size: 11px;
     }
+    .follow .follow_tit .sns_icon ul .icon {
+        margin-right: 1vw;
+      }
 }
 
 /* 반응형에서 화면 크기가 어떻든 아래쪽에 스크롤이 나오면 망한거임  */
