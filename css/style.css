@@ -423,15 +423,16 @@ body.on {
     height: 100%;
     width: 100%;
     padding: 2vw 0vw 5vw 0vw;
-    background: #F5F4F5;
+    background: #f5f4f559;
 }
 
 .follow p {
     margin-bottom: 2vw;
     text-align: center;
-    font-size: 1vw;
+    font-size: 1.2vw;
     text-transform: uppercase;
-    font-family: 'HandelGothic TL';
+    font-family: 'Dancing Script';
+    font-weight: bold;
 }
 
 .follow .follow_wrap {
