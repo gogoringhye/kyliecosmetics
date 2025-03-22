@@ -1139,20 +1139,8 @@ footer .foot_left ul li a:hover {
             font-size: 16px;
         }
 
-        .follow .follow_wrap {
-            width: 80%;
-            height: 28vw;
-        }
-
-        .follow p {
-            font-size: 2vw;
-        }
-
-        .follow .cont {
-            width: 15vw;
-            height: 15vw;
-            margin-top: 0.7vw;
-            transition: 0.2s;
+        .follow {
+            display: none;
         }
 
         /* footer */
@@ -1204,26 +1192,9 @@ footer .foot_left ul li a:hover {
         }
 
         .follow {
-            height: 30vh;
-            width: 100%;
-            padding: 2vw 0vw 7vw 0vw;
-            background: #f5f4f573;
+            display: none;
         }
 
-        .follow p {
-            font-size: 2vw;
-        }
-
-        .follow .follow_wrap {
-            width: 77%;
-            height: 50vw;
-        }
-
-        .follow .cont {
-            width: 20vw;
-            height: 20vw;
-            margin-top: 3.7vw;
-        }
     }
 }
 
