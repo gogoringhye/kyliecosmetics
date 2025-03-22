@@ -837,7 +837,7 @@ footer .foot_left ul li a:hover {
     .foot_wrap {
         display: flex;
         justify-content: space-between;
-        padding: 4vw 2vw 2vw 2vw;
+        padding: 2vw 0vw 4vw 0vw;
     }
 
     footer .foot_left {
@@ -847,11 +847,11 @@ footer .foot_left ul li a:hover {
     }
 
     footer .foot_left ul li {
-        font-size: 1.2vw;
+        font-size: 1.7vw;
     }
 
     footer .foot_left a {
-        line-height: 1.5vw;
+        line-height: 2.5vw;
     }
 
     /* 1024px전에 깨지는 것은 1400px에 가서 추가적인 스타일을 적용하여 해결*/
