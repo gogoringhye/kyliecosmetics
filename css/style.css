@@ -1192,9 +1192,10 @@ footer .foot_left ul li a:hover {
         }
 
         .follow {
-            height: 20vh;
+            height: 30vh;
             width: 100%;
-            padding: 5vw 0vw 2vw 0vw;
+            padding: 2vw 0vw 7vw 0vw;
+            background: #f5f4f573;
         }
 
         .follow p {
@@ -1202,7 +1203,14 @@ footer .foot_left ul li a:hover {
         }
 
         .follow .follow_wrap {
-            height: 35vw;
+            width: 77%;
+            height: 50vw;
+        }
+
+        .follow .cont {
+            width: 20vw;
+            height: 20vw;
+            margin-top: 3.7vw;
         }
     }
 }
