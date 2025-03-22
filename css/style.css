@@ -971,6 +971,10 @@ footer .foot_left ul li a:hover {
             margin: 50px 0;
         }
 
+        .follow {
+            display: none;
+        }
+
         /* footer */
 
         .foot_wrap {
