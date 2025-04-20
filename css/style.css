@@ -59,7 +59,8 @@ body {
 }
 
 .menuOpen .open .menu_img {
-    width: 80px;
+    width: 60px;
+    
 }
 
 .menuOpen .open::before {
@@ -975,6 +976,7 @@ footer .foot_left ul li a:hover {
         }
 
         .team .box:last-child img {
+            width: 100%;
             margin: 50px 0;
         }
 
@@ -1004,7 +1006,7 @@ footer .foot_left ul li a:hover {
 
         footer .foot_left ul li:nth-child(1) {
             padding-bottom: 2vw;
-            font-size: 1.3vw;
+            font-size: 2vw;
         }
 
         footer .foot_left {
@@ -1031,7 +1033,10 @@ footer .foot_left ul li a:hover {
         }
 
         .menuOpen .open img {
-            height: 38px;
+            height: auto;
+            margin-top: 10%;
+            margin-left: -25%;
+            width: 50px;
         }
 
         .menuOpen .menuWrap a.close.en {
@@ -1172,14 +1177,14 @@ footer .foot_left ul li a:hover {
         }
 
         footer .foot_left ul li {
-            line-height: 3vw;
-            font-size: 1.8vw;
+            line-height: 2vw;
+            font-size: 2.5vw;
             margin-bottom: 1vw;
         }
 
         footer .foot_left ul li:nth-child(1) {
             padding-bottom: 2.3vw;
-            font-size: 2.3vw;
+            font-size: 2.8vw;
         }
 
     }
